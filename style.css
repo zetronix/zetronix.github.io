@@ -1,0 +1,43 @@
+h1.title {
+    font-size: 80px;
+    text-align: center;
+
+    color: rgb(198, 245, 180);
+    font-family: "Audiowide", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+}
+
+body {
+    background-image: url("img/background1.png");
+    background-repeat: no-repeat;
+}
+
+.nav {
+    font-family: "Audiowide", sans-serif;
+    font-size: 32px;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* « The magic. */
+}
+
+.nav li {
+    display: inline; /* « More magic. */
+}
+
+.nav a {
+    display: inline-block; /* « Last bit of magic. */
+    padding: 10px;
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 2px dotted antiquewhite;
+  }
