@@ -94,29 +94,34 @@ main{
     color: #0e0274;
 }
 
-.social{
+.container{
     width: 100%;
+    height: 200px;
     text-align: center;
 }
 
-.fa {
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 30px;
+.container li{
+    display: inline;
+}
+
+.fa{
+    padding: 20px;  
+    text-align: center;  
+    margin: 50px 2px;  
+    font-size: 80px;  
     width: 50px;
-    height: 50px;
-    text-decoration: none;
-    text-align: center;
-    float: left;
-  }
+    border-radius: 10px;
+}
 
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-    margin-right: 30px;
-  }
-
-  .fa-instagram{
-    background: #3B5998;
+.fa-facebook {  
+    background: #3B5998;  
     color: white;
   }
+
+.fa-instagram{
+    background: #833ab4;
+    background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+    );
+}
