@@ -98,11 +98,19 @@ main{
 .container{
     width: 100%;
     height: 200px;
+    margin: 0;
+
+}
+
+.container > ul{
     text-align: center;
+    list-style-type:none;
+    padding: 0;
 }
 
 .container li{
     display: inline;
+    list-style-type: none;
 }
 
 .fa{
