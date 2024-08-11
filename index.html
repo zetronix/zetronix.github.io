@@ -5,24 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capoeira Szczecin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobilestyle.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="scripts/jquery.scrollTo.min.js"></script>
+
+    <script>
+        jQuery(function ($) {
+            $.scrollTo(0, 1000);
+
+            $('#capoInfoLink').click(function () {
+                $.scrollTo($('#capoeira'), 1000);
+            });
+        });
+    </script>
     <!-- fonts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
+    <div class="slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+
     <header>
         <h1 class="title">Capoeira Szczecin</h1>
     </header>
 
     <nav>
         <ul class="nav">
-            <li><a href="#capoeira">Czym jest CAPOEIRA?</a></li>
+            <li><a id="capoInfoLink" href="#">Czym jest CAPOEIRA?</a></li>
             <li><a href="#grupa">Grupa</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
         </ul>
@@ -40,7 +62,7 @@
 
         <div class="hour">18:00 - 19:30</div>
     </main>
-    
+
     <div class="container">
         <ul class="socialList">
             <li><a href="https://www.facebook.com/capoeiraszczecin.igc" class="fa fa-facebook" target="_blank"></a></li>
@@ -49,5 +71,48 @@
         </ul>
     </div>
 </body>
+
+<div class="space"></div>
+
+<article>
+    <div class="infoContainter" id="capoeira">
+        <div class="capoeiraInfo">
+            Capoeira to afrobrazylijski rytuał składający się z improwizowanej walki tanecznej między dwiema osobami
+            otoczonymi
+            przez grupę ludzi śpiewających i grających na instrumentach. <br />Ludzie często opisują capoeirę jako
+            taniec, walkę lub grę,
+            ale to, co sprawia, że ta artystyczna modalność jest tak niesamowita,
+            to fakt, że są to wszystkie trzy elementy w jednym. Tańczysz, grasz i walczysz - wszystko w tym samym
+            czasie.
+        </div>
+        <br />
+        <div class="capoeiraInfo">
+            <img class="capoImg" src="img/capo1.png" />
+        </div>
+        <br />
+        <div class="capoeiraInfo">
+            Pochodzenie i ewolucja Capoeira jest przedmiotem ciągłej debaty. Najbardziej akceptowanym wyjaśnieniem jest
+            to, że Capoeira
+            ewoluowała podczas handlu niewolnikami, który rozpoczął się w XVI wieku. Niewolnicy byli pozostawieni woli
+            swoich panów bez
+            jakiejkolwiek formy samoobrony. Aby położyć kres zniewoleniu, zaczęli trenować walkę. <br />Właściciele
+            niewolników zabraniali jakiejkolwiek
+            formy treningu fizycznego, dlatego niewolnicy ukrywali swój trening jako taniec. Niewolnicy, którzy mieli
+            szczęście uciec,
+            zorganizowali i zarządzali społecznościami znanymi jako quilombos. Największym i najbardziej prężnym
+            quilombos było Quilombo
+            dos Palmares, w północno-wschodniej części Brazylii. <br />Niewolnicy, używając Capoeira, zjednoczyli się w
+            buncie, który doprowadził
+            do ich wolności.
+        </div>
+        <br />
+        <div class="capoeiraInfo">
+            <img class="capoImg" src="img/capo2.png" />
+        </div>
+    </div>
+</article>
+
+<div class="groupInfo"></div>
+<div class="contact"></div>
 
 </html>
