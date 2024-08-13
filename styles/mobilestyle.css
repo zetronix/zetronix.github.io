@@ -31,8 +31,7 @@
         font-weight: 400;
         font-size: 16px;
         text-align: center;
-        padding: 2rem;
-        margin: 1rem;
+        width: 90%;
     }
 
     .capoeiraInfo{
@@ -44,6 +43,10 @@
         height: auto;
         text-align: justify;
         padding: 20px;
+    }
+
+    .capoImg{
+        width: 90%;
     }
 
     .trainer{

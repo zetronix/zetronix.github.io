@@ -147,8 +147,8 @@ main {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    padding: 2rem;
-    margin: 1rem;
+    margin: auto;
+    padding: 10px;
 }
 
 .capoeiraInfo{
@@ -178,6 +178,7 @@ main {
     margin: auto;
     padding: 0;
     width: 40%;
+    padding: 10px;
 }
 
 .trainerImg{
