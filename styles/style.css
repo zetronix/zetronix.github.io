@@ -167,7 +167,7 @@ main {
 }
 
 .capoImg{
-    width: 70%;
+    width: 90%;
     padding: 20px;
     margin: auto;
 }
@@ -184,7 +184,6 @@ main {
 .trainerImg{
     padding: 10px;
     float: left;
-    width: 40%;
 }
 
 .trainerInfoText{

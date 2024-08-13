@@ -47,17 +47,21 @@
 
     .capoImg{
         width: 90%;
+        height: auto;
     }
 
     .trainer{
         width: 90%;
         padding: 10px;
         text-align: center;
+        padding: auto;
     }
 
     .trainerImg{
-        float: top;
         width: 90%;
+        text-align: center;
+        margin: auto;
+        padding: auto;
     }
 
     .trainerInfoText{
