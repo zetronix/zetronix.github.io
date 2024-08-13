@@ -45,4 +45,26 @@
         text-align: justify;
         padding: 20px;
     }
+
+    .trainer{
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .trainerImg{
+        float: top;
+        width: 90%;
+    }
+
+    .trainerInfoText{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        width: 90%;
+        float:none;
+        padding: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
 }

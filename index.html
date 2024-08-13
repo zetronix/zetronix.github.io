@@ -13,11 +13,16 @@
 
     <script>
         jQuery(function ($) {
-            $.scrollTo(0, 1000);
+            //$.scrollTo(0, 1000);
 
             $('#capoInfoLink').click(function () {
                 $.scrollTo($('#capoeira'), 1000);
             });
+            $('#groupInfoLink').click(function () {
+                $.scrollTo($('#trainers'), 1000);
+            });
+
+
         });
     </script>
     <!-- fonts and styles -->
@@ -45,7 +50,7 @@
     <nav>
         <ul class="nav">
             <li><a id="capoInfoLink" href="#">Czym jest CAPOEIRA?</a></li>
-            <li><a href="#grupa">Grupa</a></li>
+            <li><a id="groupInfoLink" href="#">Grupa</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
         </ul>
     </nav>
@@ -112,7 +117,46 @@
     </div>
 </article>
 
-<div class="groupInfo"></div>
-<div class="contact"></div>
+<div class="space"></div>
+<article>
+    <div class="trainer" id="trainers">
+        <div class="trainerImg" ><img src="img/ania_jpg.jpg"/></div>
+        <div class="trainerInfoText">
+            <h4>Ania <em>'Sol'</em> Michałek</h4>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <br/>
+    <div class="trainer">
+        <div class="trainerImg" ><img src="img/patryk_jpg.jpg"/></div>
+        
+        <div class="trainerInfoText">
+            <h4>Patryk <em>'Bode'</em> Król</h4>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <br/>
+    <div class="trainer">
+        <div class="trainerImg" ><img src="img/lukasz_jpg.jpg"/></div>
+
+        <div class="trainerInfoText">
+            <h4>Łukasz <em>'Bocão'</em> Zadrożny</h4>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</article>
+
 
 </html>
