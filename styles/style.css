@@ -61,7 +61,7 @@ main {
     font-size: 70px;
     font-weight: 400;
     font-style: normal;
-    color: gold
+    color: gold;
 }
 
 .trening {
@@ -148,18 +148,29 @@ main {
     font-size: 18px;
     text-align: center;
     margin: auto;
-    padding: 10px;
 }
 
 .capoeiraInfo{
     background-color: rgba(214, 214, 214, 0.5);
     border-radius: 4px;
     margin: auto;
-    display: flex;
     width: 40%;
     height: auto;
     text-align: justify;
     padding: 20px;
+}
+
+.articleTitle{
+    background-color: rgba(214, 214, 214, 0.5);
+    border-radius: 4px;
+    margin: auto;
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    font-size: 35px;
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    display: block;
 }
 
 .capoeiraImage{
@@ -178,7 +189,7 @@ main {
     margin: auto;
     padding: 0;
     width: 40%;
-    padding: 10px;
+    padding: 20px;
 }
 
 .trainerImg{
