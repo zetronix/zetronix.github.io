@@ -22,8 +22,25 @@
         font-size: 40px;
     }
 
-    .days {
-        font-size: 20px;
+    .schedule {
+        gap: 14px;
+    }
+
+    .day-block {
+        width: 90%;
+        padding: 14px 16px;
+    }
+
+    .day-name {
+        font-size: 24px;
+    }
+
+    .schedule-group {
+        font-size: 18px;
+    }
+
+    .schedule-group.adult {
+        font-size: 22px;
     }
 
     .infoContainter{
