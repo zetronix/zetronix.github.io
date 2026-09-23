@@ -1,206 +1,65 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capoeira Szczecin</title>
+    <title>Capoeira Szczecin — treningi dla dzieci, młodzieży i dorosłych</title>
+    <meta name="description" content="Poznaj capoeirę w Szczecinie. Treningi dla dzieci, młodzieży i dorosłych w Szkole Podstawowej nr 46. Sprawdź grafik i poznaj naszych trenerów.">
+    <meta property="og:title" content="Capoeira Szczecin">
+    <meta property="og:description" content="Ruch, muzyka i dobra energia. Sprawdź grafik treningów i dołącz do nas w Szczecinie.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="scripts/jquery.scrollTo.min.js"></script>
-
-    <script>
-        jQuery(function ($) {
-            //$.scrollTo(0, 1000);
-
-            $('#capoInfoLink').click(function () {
-                $.scrollTo($('#capoeira'), 1000);
-            });
-            $('#groupInfoLink').click(function () {
-                $.scrollTo($('#trainers'), 1000);
-            });
-            $('#contactLink').click(function() {
-                $.scrollTo($('#contact'), 1000);
-            })
-
-
-        });
-    </script>
-    <!-- fonts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="slider">
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-    </div>
-
-    <header>
-        <h1 class="title">Capoeira Szczecin</h1>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <header class="site-header wrap">
+        <a class="brand" href="#main">CAPOEIRA <span>SZCZECIN</span></a>
+        <nav aria-label="Menu główne">
+            <a href="#schedule">Grafik</a>
+            <a href="#capoeira">O capoeirze</a>
+            <a href="#trainers">Trenerzy</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
     </header>
-
-    <nav>
-        <ul class="nav">
-            <li><a id="capoInfoLink" href="#">Czym jest CAPOEIRA?</a></li>
-            <li><a id="groupInfoLink" href="#">Trenerzy</a></li>
-            <li><a id="contactLink" href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="free">Zapraszamy</div>
-        <div class="trening">Szkoła Podstawowa nr 46</div>
-
-        <div class="schedule">
-            <div class="day-block">
-                <div class="day-name">Poniedziałek</div>
-                <div class="schedule-group">Dzieci <span>18:00 - 18:45</span></div>
-                <div class="schedule-group adult">Dorośli i Młodzież <span>18:30 - 20:00</span></div>
+    <main id="main" class="wrap">
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow">Walka · taniec · muzyka</p>
+            <h1 id="hero-title">Capoeira<br><span>w Szczecinie</span></h1>
+            <p class="hero-intro">Odkryj radość ruchu. Trenuj z nami — zajęcia dla dzieci, młodzieży i dorosłych.</p>
+            <div class="actions">
+                <a class="button" href="tel:+48789188133">Zapytaj o pierwszy trening <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="#schedule">Zobacz grafik ↓</a>
             </div>
-
-            <div class="day-block">
-                <div class="day-name">Środa</div>
-                <div class="schedule-group">Dzieci <span>17:45 - 18:30</span></div>
-                <div class="schedule-group adult">Dorośli i Młodzież <span>18:15 - 19:45</span></div>
+        </section>
+        <section id="schedule" class="schedule-section" aria-labelledby="schedule-title">
+            <div class="section-heading"><div><p class="eyebrow">Dołącz do nas</p><h2 id="schedule-title">Czas na trening</h2></div><p>Szkoła Podstawowa nr 46<br><span>Szczecin</span></p></div>
+            <div class="schedule">
+                <article class="day-block"><h3>Poniedziałek</h3><div class="schedule-group"><span>Dzieci</span><strong>18:00 – 18:45</strong></div><div class="schedule-group"><span>Dorośli i młodzież</span><strong>18:30 – 20:00</strong></div></article>
+                <article class="day-block"><h3>Środa</h3><div class="schedule-group"><span>Dzieci</span><strong>17:45 – 18:30</strong></div><div class="schedule-group"><span>Dorośli i młodzież</span><strong>18:15 – 19:45</strong></div></article>
             </div>
-        </div>
+        </section>
+        <section id="capoeira" class="content-section" aria-labelledby="capoeira-title">
+            <p class="eyebrow">Więcej niż sport</p><h2 id="capoeira-title">Czym jest capoeira?</h2>
+            <div class="story-grid"><div class="story-copy"><p>Capoeira to afrobrazylijski rytuał składający się z improwizowanej walki tanecznej między dwiema osobami otoczonymi przez grupę ludzi śpiewających i grających na instrumentach.</p><p>Ludzie często opisują capoeirę jako taniec, walkę lub grę, ale to, co sprawia, że ta artystyczna modalność jest tak niesamowita, to fakt, że są to wszystkie trzy elementy w jednym. Tańczysz, grasz i walczysz - wszystko w tym samym czasie.</p></div><img src="img/capo1.webp" alt="Gra capoeira" width="1200" height="844" loading="lazy" decoding="async"></div>
+            <div class="story-grid story-history"><img src="img/capo2.webp" alt="Capoeira — ruch i tradycja" width="1075" height="1080" loading="lazy" decoding="async"><div class="story-copy"><h3>Historia i korzenie</h3><p>Pochodzenie i ewolucja Capoeira jest przedmiotem ciągłej debaty. Najbardziej akceptowanym wyjaśnieniem jest to, że Capoeira ewoluowała podczas handlu niewolnikami, który rozpoczął się w XVI wieku. Niewolnicy byli pozostawieni woli swoich panów bez jakiejkolwiek formy samoobrony. Aby położyć kres zniewoleniu, zaczęli trenować walkę.</p><p>Właściciele niewolników zabraniali jakiejkolwiek formy treningu fizycznego, dlatego niewolnicy ukrywali swój trening jako taniec. Niewolnicy, którzy mieli szczęście uciec, zorganizowali i zarządzali społecznościami znanymi jako quilombos. Największym i najbardziej prężnym quilombos było Quilombo dos Palmares, w północno-wschodniej części Brazylii.</p><p>Niewolnicy, używając Capoeira, zjednoczyli się w buncie, który doprowadził do ich wolności.</p></div></div>
+        </section>
+        <section id="trainers" class="content-section" aria-labelledby="trainers-title">
+            <p class="eyebrow">Poznaj nas</p><h2 id="trainers-title">Ludzie z pasją</h2>
+            <div class="trainers"><article class="trainer"><img src="img/ania2_jpg.jpg" alt="Ania Michałek" width="310" height="500" loading="lazy" decoding="async"><div class="trainer-copy"><h3>Ania <em>'Sol'</em> Michałek</h3><p>Trenuje capoeirę od 13 lat. Brała udział w warsztatach capoeira w Polsce i Europie. Ma doświadczenie w prowadzeniu zajęć z dziećmi, młodzieżą i dorosłymi. Chętnie podzieli się swoją wiedzą zarówno w aspekcie fizycznym jak i muzycznym. Przekaże jak nauczyć się tricków. Nauczy grać na instrumentach wykorzystywanych na zajęciach. Zna pokaźną ilość piosenek. Podszkoli z języka portugalskiego. Nieustannie dąży do samorozwoju a jej motto życiowe to "Uwierz w proces".</p></div></article>
+<article class="trainer"><img src="img/patryk2_jpg.jpg" alt="Patryk Król" width="310" height="500" loading="lazy" decoding="async"><div class="trainer-copy"><h3>Patryk <em>'Bode'</em> Król</h3><p>Zainspirowany postacią z Tekkena trenuje capoeirę od 10 lat. Wielokrotny uczestnik warsztatów capoeiry w Polsce i całej Europie. Wyznawca siły i zdrowych wzorców ruchowych. Ponadto zawodnik jiu jitsu i trener samoobrony. Wierzy, że nieustanny rozwój jest kluczem do szczęścia w sporcie i w życiu codziennym. Jego misją jest zaszczepienie zdrowych nawyków sportowych w życiu codziennym dzieci, młodzieży oraz dorosłych.</p></div></article>
+<article class="trainer"><img src="img/lukasz2_jpg.jpg" alt="Łukasz Zadrożny" width="310" height="500" loading="lazy" decoding="async"><div class="trainer-copy"><h3>Łukasz <em>'Bocão'</em> Zadrożny</h3><p>Zaczął trenować Capoeirę w 2008 roku na złocistej, świnoujskiej plaży. Szczególną radość czerpie z elementów akrobatycznych, które dodają dynamiki i widowiskowości każdej grze w roda. Dzięki wieloletniemu doświadczeniu potrafi wnikliwie analizować ruchy i dostosowywać treningi do indywidualnych potrzeb swoich uczniów, inspirując ich do ciągłego doskonalenia.</p></div></article>
+</div>
+        </section>
+        <section id="contact" class="contact content-section" aria-labelledby="contact-title">
+            <div><p class="eyebrow">Zrób pierwszy krok</p><h2 id="contact-title">Do zobaczenia na sali!</h2><p>Masz pytania o zajęcia? Skontaktuj się z Anią.</p><a class="phone" href="tel:+48789188133">+48 789 188 133</a><p>Ania Michałek</p></div>
+            <div class="social"><h3>Bądź na bieżąco</h3><p>Zajrzyj do nas także między treningami.</p><a href="https://www.facebook.com/capoeiraszczecin.igc" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.instagram.com/capoeiraszczecin.igc/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+        </section>
     </main>
-
-    
+    <footer class="wrap">Capoeira Szczecin <span>Walka. Taniec. Muzyka.</span></footer>
 </body>
-
-<div class="space"></div>
-
-<article>
-    <div class="articleTitle" id="capoeira">
-        Czym jest Capoeira?
-    </div>
-    <br/>
-    <div class="infoContainter">
-        <div class="capoeiraInfo">
-            Capoeira to afrobrazylijski rytuał składający się z improwizowanej walki tanecznej między dwiema osobami
-            otoczonymi
-            przez grupę ludzi śpiewających i grających na instrumentach. <br />Ludzie często opisują capoeirę jako
-            taniec, walkę lub grę,
-            ale to, co sprawia, że ta artystyczna modalność jest tak niesamowita,
-            to fakt, że są to wszystkie trzy elementy w jednym. Tańczysz, grasz i walczysz - wszystko w tym samym
-            czasie.
-        </div>
-        <br />
-        <div class="capoeiraInfo">
-            <img class="capoImg" src="img/capo1.png" />
-        </div>
-        <br />
-        <div class="capoeiraInfo">
-            Pochodzenie i ewolucja Capoeira jest przedmiotem ciągłej debaty. Najbardziej akceptowanym wyjaśnieniem jest
-            to, że Capoeira
-            ewoluowała podczas handlu niewolnikami, który rozpoczął się w XVI wieku. Niewolnicy byli pozostawieni woli
-            swoich panów bez
-            jakiejkolwiek formy samoobrony. Aby położyć kres zniewoleniu, zaczęli trenować walkę. <br />Właściciele
-            niewolników zabraniali jakiejkolwiek
-            formy treningu fizycznego, dlatego niewolnicy ukrywali swój trening jako taniec. Niewolnicy, którzy mieli
-            szczęście uciec,
-            zorganizowali i zarządzali społecznościami znanymi jako quilombos. Największym i najbardziej prężnym
-            quilombos było Quilombo
-            dos Palmares, w północno-wschodniej części Brazylii. <br />Niewolnicy, używając Capoeira, zjednoczyli się w
-            buncie, który doprowadził
-            do ich wolności.
-        </div>
-        <br />
-        <div class="capoeiraInfo">
-            <img class="capoImg" src="img/capo2.png" />
-        </div>
-    </div>
-</article>
-
-<div class="space"></div>
-
-<article>
-    <div class="articleTitle"  id="trainers">
-        Trenerzy
-    </div>
-    <br/>
-    <div class="trainer">
-        <div class="trainerImg" >
-            <img class="capoImg" src="img/ania2_jpg.jpg"/>
-        </div>
-        <div class="trainerInfoText">
-            <h4>Ania <em>'Sol'</em> Michałek</h4>
-            Trenuje capoeirę od 13 lat. Brała udział w warsztatach capoeira w Polsce i Europie. Ma doświadczenie w prowadzeniu zajęć z dziećmi,
-            młodzieżą i dorosłymi. Chętnie podzieli się swoją wiedzą zarówno w aspekcie fizycznym jak i muzycznym. Przekaże jak nauczyć się 
-            tricków. Nauczy grać na instrumentach wykorzystywanych na zajęciach. Zna pokaźną ilość piosenek. Podszkoli z języka portugalskiego. 
-            Nieustannie dąży do samorozwoju a jej motto życiowe to "Uwierz w proces".
-        </div>
-        <div style="clear:both;"></div>
-    </div>
-    <br/>
-    <div class="trainer">
-        <div class="trainerImg" >
-            <img class="capoImg" src="img/patryk2_jpg.jpg"/>
-        </div>
-        
-        <div class="trainerInfoText">
-            <h4>Patryk <em>'Bode'</em> Król</h4>
-            Zainspirowany postacią z Tekkena trenuje capoeirę od 10 lat. Wielokrotny uczestnik warsztatów capoeiry w Polsce i całej Europie. 
-            Wyznawca siły i zdrowych wzorców ruchowych. Ponadto zawodnik jiu jitsu i trener samoobrony. Wierzy, że nieustanny rozwój jest 
-            kluczem do szczęścia w sporcie i w życiu codziennym. Jego misją jest zaszczepienie zdrowych nawyków sportowych w życiu codziennym 
-            dzieci, młodzieży oraz dorosłych.
-        </div>
-        <div style="clear:both;"></div>
-    </div>
-    <br/>
-    <div class="trainer">
-        <div class="trainerImg" >
-            <img class="capoImg" src="img/lukasz2_jpg.jpg"/>
-        </div>
-
-        <div class="trainerInfoText">
-            <h4>Łukasz <em>'Bocão'</em> Zadrożny</h4>
-            Zaczął trenować Capoeirę w 2008 roku na złocistej, świnoujskiej plaży. Szczególną radość czerpie z elementów akrobatycznych, 
-            które dodają dynamiki i widowiskowości każdej grze w roda. Dzięki wieloletniemu doświadczeniu potrafi wnikliwie analizować ruchy i 
-            dostosowywać treningi do indywidualnych potrzeb swoich uczniów, inspirując ich do ciągłego doskonalenia. 
-        </div>
-        <div style="clear:both;"></div>
-    </div>
-</article>
-
-<div class="space"></div>
-
-<article>
-    <div class="articleTitle"  id="contact">
-        Kontakt
-    </div>
-    <br/>
-    <div class="infoContainter">
-        <div class="capoeiraInfo contactInfo">
-            +48 789 188 133 - Ania Michałek
-        </div>
-        <br/>
-        <div class="container">
-            <div>
-                Sprawdź nasze social media!
-            </div>
-            <br/>
-            <ul class="socialList">
-                <li><a href="https://www.facebook.com/capoeiraszczecin.igc" class="fa fa-facebook" target="_blank"></a></li>
-                <li><a href="https://www.instagram.com/capoeiraszczecin.igc/" class="fa fa-instagram" target="_blank"></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-</article>
-
-
 </html>

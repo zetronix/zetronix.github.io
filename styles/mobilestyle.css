@@ -1,113 +1,32 @@
-@media screen and (max-width: 600px) {
-    h1.title {
-        font-size: 40px;
-    }
-
-    .nav {
-        font-size: 16px;
-    }
-
-    .nav li {
-        display: block;
-    }
-
-    .nav li:not(:last-child) {
-        margin-right: 5px;
-        padding-right: 5px;
-        border: none;
-        border-bottom: 2px dotted antiquewhite;
-    }
-
-    .free {
-        font-size: 40px;
-    }
-
-    .schedule {
-        gap: 14px;
-    }
-
-    .day-block {
-        width: 90%;
-        padding: 14px 16px;
-    }
-
-    .day-name {
-        font-size: 24px;
-    }
-
-    .schedule-group {
-        font-size: 18px;
-    }
-
-    .schedule-group.adult {
-        font-size: 22px;
-    }
-
-    .infoContainter{
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        text-align: center;
-        width: 95%;
-    }
-
-    .capoeiraInfo{
-        background-color: rgba(214, 214, 214, 0.5);
-        border-radius: 4px;
-        margin: auto;
-        display: flex;
-        width: 90%;
-        height: auto;
-        text-align: justify;
-        padding: 20px;
-    }
-
-    .capoImg{
-        width: 90%;
-        height: auto;
-    }
-
-    .trainer{
-        width: 90%;
-        padding: 10px;
-        text-align: center;
-        padding: auto;
-    }
-
-    .trainerImg{
-        width: 90%;
-        text-align: center;
-        margin: auto;
-        padding: auto;
-    }
-
-    .trainerInfoText{
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        width: 90%;
-        float:none;
-        padding: 10px;
-        margin-right: 10px;
-        text-align: justify;
-    }
-
-    .articleTitle{
-        width: 90%;
-        padding: 20px 10px 20px 10px;
-        font-size: 22px;
-    }
-
-    .container {
-        width: 90%;
-
-        background-color: rgba(214, 214, 214, 0.5);
-        border-radius: 4px;
-    
-    }
-
-    .contactInfo{
-        text-align: center;
-        display: inline-block;
-    }
+@media (max-width: 800px) {
+    .site-header { align-items: flex-start; }
+    nav { justify-content: flex-end; gap: 0 16px; }
+    .schedule { gap: 16px; }
+    .day-block { padding: 22px; }
+    .story-grid { grid-template-columns: 1fr; gap: 24px; }
+    .story-grid > img { max-height: 460px; object-fit: cover; }
+    .story-history .story-copy { order: -1; }
+    .trainer { grid-template-columns: 180px minmax(0, 1fr); }
+    .trainer-copy { padding: 24px; }
+    .contact { grid-template-columns: 1fr; padding: 32px; gap: 28px; }
+}
+@media (max-width: 560px) {
+    .wrap { width: calc(100% - 32px); }
+    .site-header { flex-direction: column; gap: 16px; padding-block: 20px; }
+    nav { justify-content: flex-start; gap: 4px 20px; }
+    nav a { font-size: 14px; }
+    .hero { padding: 32px 24px; border-radius: 16px; }
+    .hero-intro { font-size: 17px; }
+    .actions { align-items: stretch; flex-direction: column; gap: 16px; }
+    .button { padding: 14px; font-size: 15px; }
+    .text-link { text-align: center; padding-block: 6px; }
+    .section-heading { align-items: flex-start; flex-direction: column; gap: 0; margin-bottom: 22px; }
+    .section-heading h2 { margin-bottom: 14px; }
+    .section-heading > p { text-align: left; }
+    .schedule { grid-template-columns: 1fr; }
+    .content-section { margin-top: 56px; }
+    .trainer { grid-template-columns: 1fr; }
+    .trainer > img { height: auto; max-height: 380px; object-fit: contain; background: #eef0ee; }
+    .trainer-copy { padding: 24px; }
+    .contact { padding: 28px 24px; }
 }
