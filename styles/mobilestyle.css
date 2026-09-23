@@ -22,7 +22,7 @@
     .text-link { text-align: center; padding-block: 6px; }
     .section-heading { align-items: flex-start; flex-direction: column; gap: 0; margin-bottom: 22px; }
     .section-heading h2 { margin-bottom: 14px; }
-    .section-heading > p { text-align: left; }
+    .training-location { width: 100%; margin-bottom: 0; padding: 16px 18px; }
     .schedule { grid-template-columns: 1fr; }
     .content-section { margin-top: 56px; }
     .trainer { grid-template-columns: 1fr; }
